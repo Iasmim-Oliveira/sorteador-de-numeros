@@ -10,6 +10,11 @@ function sortear () {
         Swal.fire("O número inicial não pode ser maior que o final!");
     }
 
+    if (quantidade > (ate - de + 1)) {
+        Swal.fire('Campo "Quantidade" deve ser menor ou igual ao intervalo informado no campo "Do número" até o campo "Até o número". Verifique!');
+        return;
+      }    
+
     let sorteados = [];
     let numero;
 
